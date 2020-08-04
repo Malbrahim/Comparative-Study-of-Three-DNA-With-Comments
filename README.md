@@ -47,5 +47,5 @@
 
 
 ## Future work 
-
-   In the future, we are thinking about extending this project by creating a new steganography method better than and stronger than others, by combining more than one algorithm, to obtain more secure data at exchanging it. Or, we can improve and overcome some of the limitations we found during our implementation of the selected algorithm. Also, we can examine the selected algorithm with a different encryption algorithm and study the effect of that on the new proposed algorithm. In addition, we are thinking about studying more steganography algorithms and make comparisons among them to clarify their advantages and their disadvantages then combine different algorithms to propose a new better algorithm that inherent the strength of each algorithm.   
+    
+    In the future, we are thinking about extending this project by creating a new steganography method better than and stronger than others, by combining more than one algorithm, to obtain more secure data at exchanging it. Or, we can improve and overcome some of the limitations we found during our implementation of the selected algorithm. Also, we can examine the selected algorithm with a different encryption algorithm and study the effect of that on the new proposed algorithm. In addition, we are thinking about studying more steganography algorithms and make comparisons among them to clarify their advantages and their disadvantages then combine different algorithms to propose a new better algorithm that inherent the strength of each algorithm.   
