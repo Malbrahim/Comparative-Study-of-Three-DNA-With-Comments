@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>To-Do</title>
+    <meta charset="UTF-8">
+    <link href="../static/css/todo.css" th:href="@{/css/todo.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="header">
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a class="logo" href="HomePage.html">To-Do</a>
+            <a href="aboutUs.html">About</a>
+            <a href="index.html">Home</a>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <p class="webName">Methods to increase security</p>
+            <div class="splitter"></div>
+            <p class="slideText">Comparative Study Of Three DNA Based
+                Information Hiding Methods.
+            </p>
+        </div>
+    </header>
+</div>
+
+<div class="container">
+    <div>
+        <form class="form-horizontal" th:object="${decryptionInput}" th:action="@{/decryption}" method="post">
+            <div class="form-group">
+                <div>
+                    <input type="text" name="encryptedMsg" class="form-control" th:field="*{encryptedMsg}"
+                           value="encrypted binary message"
+                           th:errorclass="has-error"/>
+                    <input type="text" name="keyword" class="form-control" th:field="*{keyword}" value="keyword"
+                           th:errorclass="has-error"/>
+                    <input type="text" name="AMBIG" class="form-control" th:field="*{AMBIG}" value="AMBIG"
+                           th:errorclass="has-error"/>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default" value="decryption">Decryption</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="split"></div>
+
+<div class="container">
+    <div th:if="${(cipherDetails)!=null}">
+        <p>Message is : </p>
+        <p th:text="${cipherDetails.msg}"/><br>
+        <br>
+    </div>
+</div>
+<br>
+<div class="split"></div>
+
+</body>
+</html>
